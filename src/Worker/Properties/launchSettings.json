@@ -1,0 +1,30 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:15683",
+      "sslPort": 44338
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "URL_DATABASE": "mongodb://localhost/jobs",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Worker": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "URL_DATABASE": "mongodb://localhost/jobs" 
+      },
+      "dotnetRunMessages": "true",
+      "applicationUrl": "https://localhost:5002;http://localhost:5003"
+    }
+  }
+}
